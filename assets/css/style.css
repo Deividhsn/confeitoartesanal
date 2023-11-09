@@ -1,0 +1,188 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Meie+Script&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Vujahday+Script&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+      
+}
+
+:root{
+    --font0-font-family: 'Lovers Quarrel', cursive;
+    --font1-font-family: 'Noto Sans', sans-serif;
+    --font2-font-family: 'Vujahday Script', cursive;
+
+    --color1-color: #efb810;
+}
+
+body{
+    background-color: #f0ffff;
+    position: relative;
+  
+}
+
+
+header {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+
+    
+    --size: 10px;
+    --p: 15px;
+    --R: 25.3px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/;
+    
+    height:90px;
+    width: 100%;
+    
+  
+     -webkit-mask:
+  
+    radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))),#f7535b 99%,#0000 30%) calc(35% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+    radial-gradient(var(--R) at 50% calc(100% + var(--p)),#0000 99%,#ff73ec 101%) 50% calc(100% - var(--size))/calc(4*var(--size)) 100% repeat-x;
+    background:linear-gradient(90deg,#f8a9f2,#db6060);  
+    z-index: 998;
+    
+    
+}
+
+header nav{
+    display: flex;
+    gap:500px;
+    align-items: center;
+    position: relative;   
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav ul li{
+    width: 120px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+header nav ul li a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: var(--font2-font-family);
+}
+
+.gray li a{
+    color: #ffffff;
+}
+
+.white li a{
+    color: #ccf8f8;
+}
+
+figure{
+    z-index: 999;
+    position: absolute; 
+    height: 200px;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    
+
+}
+figure img{
+    width: 100%;
+}
+
+header nav ul li a:hover{
+    color: var(--color1-color);
+}
+
+
+.gray li a:hover{
+    color: #a87b85;
+}
+
+.section-banner{
+    height: 100vh;
+    width: 100%;
+    background-image: url("..//img/bolo_da_vovo.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 2px 10px 3px #000000 !important;
+    
+}
+
+.section-banner div{
+    height: 100%;
+    width: 100%;
+    background-color: #0000005b;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+}
+.section-banner div h1{
+    
+    text-transform: capitalize;
+    color: black;
+    font-size: 8rem;
+    font-family: var(--font0-font-family);
+    font-weight: 500;
+    color:var(--color1-color);
+ 
+    
+}
+
+.section-main{
+    height: 100vh;
+    width: 90%;
+    margin-inline: auto;
+    z-index: 49;
+    
+}
+
+.carouceu{
+    background-color: #00000054;
+    height: 500px;
+    width: 500px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 100% !important;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

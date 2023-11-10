@@ -254,3 +254,12 @@ header nav ul li a:hover{
     border: solid 1px red ;
 }
 
+.section-diferences{
+    height: max-content;
+    width: 90%;
+}
+
+.box-diferences{
+    height: 300px;
+    width: 100%;
+}

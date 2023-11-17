@@ -302,7 +302,7 @@ h3{
 
 .box-diferences ul li figure{
     
-    background-color: #f8cce5;
+    background-color: #f8cce5a7;
     height: 50%;
     width:80%;
     margin-inline: auto;
@@ -310,8 +310,9 @@ h3{
     align-items: center;
     justify-content: center;
     margin-top: 8%;
+    border-radius: 10px;
 }
 
 .box-diferences ul li figure img{
-    width: 50%;
+    width: 40%;
 }

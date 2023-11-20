@@ -174,24 +174,24 @@ h3{
 
 .bigBox{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    height: 400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     background-color: #f8ccf84f;
     border-radius: 10px;
-   
+   align-items: center;
     
   
 }
 .miniBox{
-    height: 500px;
-    width: 400px;
+    height: 350px;
+    width: 250px;
     /* background-color: #ccf8f8; */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    margin-top: 30px;
     margin-inline: auto;
 
     
@@ -223,7 +223,7 @@ h3{
 
 .miniBox .products img:hover{
   height: 310px;  
-  width: 100%;
+  width:500px;
   transition: .3s;
 }
 
@@ -255,6 +255,51 @@ h3{
     border: solid 1px red ;
 }
 
+
+.section-history{
+   
+    height: 500px;
+    width: 99%;
+    margin-inline: auto;
+    position: relative;
+}
+
+.section-history figure{
+   
+    height:300px;
+    width: 800px;
+    position: absolute;
+    right: 20%;
+    top: 80px;
+    z-index: 998;
+}
+
+.section-history figure img{
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(0px 0px 20px #faa0fd);
+
+}
+.big-content{
+    display: flex;
+    z-index: 999;
+    position: relative;
+}
+
+.big-content .boleira{
+    height: 500px;
+    width: 40%;
+    background-color: #a87b85;
+
+}
+
+
+.big-content .history{
+    width:60%;
+    background-color: #ccf8f8;
+  
+
+}
 .section-diferences{
     height: max-content;
     width: 90%;

@@ -54,6 +54,11 @@ header {
     
 }
 
+.other-header{
+    
+    position: static;
+}
+
 header nav{
     display: flex;
     gap:500px;
@@ -433,11 +438,13 @@ h3{
 }
 
 .section-question .contentizao{
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 50px;
     margin-bottom: 80px;
+    
 }
 
 .section-question .contentizao .img-question{
@@ -445,9 +452,56 @@ h3{
     height: 450px;
     width: 30%;
 }
+.section-question .contentizao .img-question img{
+
+width: 100%;
+}
+
+
+
 .box-question{
     width: 80%;
 }
+
+
+.ui-accordion{
+    
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 1px #ffc9fa !important;
+    padding: 10px !important;
+    
+}
+
+.ui-accordion-header-active{
+    background-color: #d1ffff !important;
+    border: #ffc9fa solid 3px !important;
+    border-radius: 10px !important;
+    color: #000000 !important;
+    font-size: 1.5rem !important;
+   
+}
+
+.ui-accordion-header-collapsed{
+    background-color: #fce7f6 !important;
+    border: #ccf8f8 solid 3px !important;
+    border-radius: 10px !important;
+    font-size: 1.3rem !important;
+}
+
+.ui-accordion-content{
+   background-color: #ffffff !important;
+    border: #ffc9fa solid 2px !important;
+    border-radius: 10px !important;
+}
+
+
+
+
+
+
 
 footer{
     height: 300px;

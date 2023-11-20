@@ -1,6 +1,6 @@
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Meie+Script&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Vujahday+Script&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lovers+Quarrel&family=Meie+Script&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Vujahday+Script&display=swap');
 
 
 *{
@@ -17,6 +17,7 @@
     --font0-font-family: 'Lovers Quarrel', cursive;
     --font1-font-family: 'Noto Sans', sans-serif;
     --font2-font-family: 'Vujahday Script', cursive;
+    --font3-font-family: 'Caveat', cursive;
 
     --color1-color: #efb810;
 }
@@ -47,7 +48,7 @@ header {
   
     radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))),#f7535b 99%,#0000 30%) calc(35% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
     radial-gradient(var(--R) at 50% calc(100% + var(--p)),#0000 99%,#ff73ec 101%) 50% calc(100% - var(--size))/calc(4*var(--size)) 100% repeat-x;
-    background:linear-gradient(90deg,#f8a9f2,#db6060);  
+    background:linear-gradient(90deg,#f8a9f2,#ccf8f8);  
     z-index: 998;
     
     
@@ -92,7 +93,7 @@ header nav ul li a{
 }
 
 .white li a{
-    color: #ccf8f8;
+    color: #ffffff;
 }
 
 .logo{
@@ -167,9 +168,10 @@ main{
 .section-introduction h3, 
 h3{
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 5%;
     margin-bottom: 5%;
+    font-family: var(--font3-font-family);
 }
 
 .bigBox{
@@ -258,78 +260,97 @@ h3{
 
 .section-history{
    
-    height: 500px;
+    height: max-content;
     width: 99%;
     margin-inline: auto;
     position: relative;
+    background-image: url("/assets/img/nn.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  
 }
 
-.section-history figure{
-   
-    height:300px;
-    width: 800px;
+
+
+.boleira{
+    height: 500px;
+    width: 500px;
+    display: flex; 
+    justify-content: center;
     position: absolute;
-    right: 20%;
-    top: 80px;
-    z-index: 998;
+    top: 100px;
+    
+    
+   
+
 }
+.boleira img {
 
-.section-history figure img{
-    height: 100%;
-    width: 100%;
-    filter: drop-shadow(0px 0px 20px #faa0fd);
+    height: 80%;
+    margin-inline: auto;
+  
 
+ 
 }
 .big-content{
     display: flex;
-    z-index: 999;
-    position: relative;
-}
-
-.big-content .boleira{
-    height: 500px;
-    width: 40%;
-    background-color: #a87b85;
-
-}
-
-
-.big-content .history{
-    width:60%;
-    background-color: #ccf8f8;
+    z-index: 999; 
+    height: max-content;
+    width: 100%;
+   
   
-
 }
+
+.big-content div{
+    height: 100%;
+    width: 35%;
+ 
+}
+.big-content .history{
+   
+    width:65%;
+    height: 100%;
+    margin-top: 80px;
+
+    
+}
+.big-content .history p{
+    line-height: 2rem;
+    text-align: justify;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    font-family: var(--font3-font-family);
+}
+
+
+
+
 .section-diferences{
     height: max-content;
     width: 90%;
 }
 
 
-.section-diferences h3{
-    margin-top: 80px;
-    margin-bottom: 80px;
-     background-color: #a87b85;
- 
- }
+
 .box-diferences{
-    height: 300px;
+    height: 250px;
     width: 100%;
     display: flex; 
     justify-content: center;
-    align-items: center;
+    
     
 }
 
 
 .box-diferences ul{
     
-    height: 300px;
+    height: 200px;
     width: 100%;
     display: flex;
     align-items: center;
     margin-inline: auto;
-    gap: 5%;
+    gap: 1%;
     
 
     
@@ -337,27 +358,99 @@ h3{
     
 }
 .box-diferences ul li{
-    width:400px;
-    height: 90%;
+    width:300px;
+    height: 60%;
     border-radius: 10px;    
     background-color: #ccf8f8;
+    display: flex;
+    gap: 10px;
+    margin-inline: auto;
 
 
 }
+.img-diferences{
+    
+    width: 60%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: #fff6fcaf;
+    border-radius: 10px;
+    margin: 3%;
+    padding: 3%;
+
+}
+
 
 .box-diferences ul li figure{
     
-    background-color: #f8cce5a7;
-    height: 50%;
-    width:80%;
-    margin-inline: auto;
+    
+    height: 70%;
+    width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 8%;
-    border-radius: 10px;
+    
 }
 
 .box-diferences ul li figure img{
-    width: 40%;
+    width: 70%;
+}
+
+.box-diferences ul li figcaption{
+    width:100%;
+    text-align: center;
+    
+    
+}
+.box-diferences ul li figcaption h4{
+    font-family: var(--font3-font-family);
+    font-size: 1.3rem;
+}
+
+.diferences{
+    height: 89%;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+
+}
+.diferences p{
+    margin-top:  10px;
+    text-align: center;
+}
+
+.section-question{
+    height: max-content;
+    width: 100%;
+    
+    
+}
+
+.section-question .contentizao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 80px;
+}
+
+.section-question .contentizao .img-question{
+
+    height: 450px;
+    width: 30%;
+}
+.box-question{
+    width: 80%;
+}
+
+footer{
+    height: 300px;
+    width: 100%;
+    background: #f8a9f23e;
 }

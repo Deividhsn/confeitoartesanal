@@ -17,3 +17,6 @@
 //       clickable: true,
 //     },
 //   });
+$( function() {
+    $( "#accordion" ).accordion();
+  } );

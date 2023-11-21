@@ -506,5 +506,34 @@ width: 100%;
 footer{
     height: 300px;
     width: 100%;
-    background: #f8a9f23e;
+    /* background: #f8a9f23e; */
+    
+    
+}
+
+
+.start{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start div{
+    height: 80%;
+    width: 90%;
+    background-color: #ffe9fd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #ffc9fa;
+  
+    
+}
+
+
+.finish{
+    height: 15%;
+    width: 100%;
+    background-color: #ffc9fa;
 }

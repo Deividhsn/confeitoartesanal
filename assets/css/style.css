@@ -10,6 +10,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
       
 }
 
@@ -182,27 +183,29 @@ h3{
 .bigBox{
     display: grid;
     height: max-content;
-    width: 100%;
+    width: 99%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 15px;
+    gap: 30px;
     background-color: #f8ccf84f;
     border-radius: 10px;
    align-items: center;
-   padding: 10px 0;
+   padding: 10px;
    margin-inline: auto;
+   
     
   
 }
 .miniBox{
     height: 380px;
-    width: 300px;
-    /* background-color: #ccf8f8; */
+    
+    background-color: #cc1f1f10;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    margin-inline: auto;
+    /* margin-inline: auto; */
+  
     
 
     
@@ -234,13 +237,12 @@ h3{
 
 .miniBox .products img:hover{
   height: 310px;  
-  width:500px;
   transition: .3s;
 }
 
 
 .miniBox  div{
-    background-color: #cc1f1f10 !important;
+    /* background-color: #cc1f1f10 !important; */
     height: 40%;
     width: 90%;
     border-radius: 10px;

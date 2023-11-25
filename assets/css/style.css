@@ -30,9 +30,11 @@ body{
 }
 
 
-header {
+
+
+header, .other-header {
     display: flex;
-    position: absolute;
+    position: fixed;
     justify-content: center;
     align-items: center;
 
@@ -49,15 +51,14 @@ header {
   
     radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))),#f7535b 99%,#0000 30%) calc(35% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
     radial-gradient(var(--R) at 50% calc(100% + var(--p)),#0000 99%,#ff73ec 101%) 50% calc(100% - var(--size))/calc(4*var(--size)) 100% repeat-x;
-    background:linear-gradient(90deg,#f8a9f2,#ccf8f8);  
+    background:linear-gradient(90deg,#f8a9f2,rgb(157, 255, 255));  
     z-index: 998;
-    
+   
     
 }
 
 .other-header{
-    
-    position: static;
+    position: fixed;    
 }
 
 header nav{
@@ -65,7 +66,7 @@ header nav{
     gap:500px;
     align-items: center;
     position: relative;   
-}
+} 
 
 header nav ul{
     display: flex;
@@ -104,8 +105,8 @@ header nav ul li a{
 
 .logo{
     z-index: 999;
-    position: absolute; 
-    height: 200px;
+    position: fixed; 
+    height: 100px;
     width: 200px;
     top: 0;
     bottom: 0;
@@ -116,17 +117,26 @@ header nav ul li a{
 
 }
 .logo img{
-    width: 100%;
+    width: 80%;
 }
 
 header nav ul li a:hover{
     color: var(--color1-color);
 }
-
-
-.gray li a:hover{
-    color: #a87b85;
+.alterBody .logo {
+    width: 150px;
 }
+
+.alterHeader{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    z-index: 998;
+  
+
+}
+
+/*SECTION BANNER*/
 
 .section-banner{
     height: 100vh;
@@ -196,8 +206,7 @@ h3{
   
 }
 .miniBox{
-    height: 380px;
-    
+    height: 380px;   
     background-color: #cc1f1f10;
     border-radius: 10px;
     display: flex;
@@ -216,28 +225,33 @@ h3{
     display: flex;
     margin-inline: auto;
     height: 300px;
-    width: 90%;
+    width: 96%;
     overflow: hidden;
     border-radius: 10px;
  
     background-color: #f8ccf84f;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;  
+      
     
 }
 
 .miniBox .products img{
-    height: 100%;
-    width: 99%;
+    height: 92%;
+    width: 92%;
     border-radius: 10px;
-    box-shadow: 0px 7px 10px 3px #0000004b;
-
+    box-shadow: 0px 0px 10px 2px rgba(251, 143, 255, 0.705);
+    
 
 }
 
 .miniBox .products img:hover{
-  height: 310px;  
+  height: 98%;
+  width: 98%;  
   transition: .3s;
+  
+ 
+
 }
 
 
@@ -262,13 +276,14 @@ h3{
     align-items: center;
     justify-content: center; 
     border-radius: 7px;
-    color: #000000;
+    color: #57565674;
     font-weight: 800;
 }
 
 .miniBox  div a:hover{
-    background-color: #f8a9f2;
-    border: solid 1px red ;
+    color: #ffffff;
+    background-color: #10efca2a;
+    border: solid 1px #10efca2a ;
 }
 
 
@@ -611,4 +626,42 @@ footer{
 .start figure img{
  
     width: 100%;
+}
+
+/*AJUSTE PAG PRODUTOS*/
+
+
+#kits{
+    margin-top: 0%;
+    margin-bottom: 3%;
+    height: 250px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.big-box-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* background: #a1fff9a5; */
+   
+}
+
+
+
+.big-box-column .miniBox
+{
+    height: 500px;
+    background: #ffaae378 ;
+    padding: 5px;
+}
+
+.section-promotions{
+    margin-bottom: 100px;
+}
+
+/*Responsividade*/
+
+@media all and (max-width: 390px){
+
 }

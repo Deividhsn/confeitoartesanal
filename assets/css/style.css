@@ -57,29 +57,24 @@ header, .other-header {
     
 }
 
-.other-header{
-    position: fixed;    
-}
-
 header nav{
+    width: max-content;
     display: flex;
     gap:500px;
     align-items: center;
-    position: relative;   
+    
 } 
 
 header nav ul{
     display: flex;
     align-items: center;
     gap: 30px;
+    transition: .3s;
 }
 
 header nav ul li{
-    width: 120px;
-    height: 25px;
+    height: 24px;    
     display: flex;
-    align-items: center;
-    justify-content: center;
    
 }
 
@@ -102,22 +97,36 @@ header nav ul li a{
 .white li a{
     color: #ffffff;
 }
+header svg {
+   
+    width: 50px;
+    height: 50px;
+    display: none;
+  }
 
 .logo{
     z-index: 999;
     position: fixed; 
-    height: 100px;
+    height: 150px;
     width: 200px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin-inline: auto;
+   
     
 
 }
 .logo img{
+    position: absolute;
     width: 80%;
+    margin-inline: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
 }
 
 header nav ul li a:hover{
@@ -662,6 +671,188 @@ footer{
 
 /*Responsividade*/
 
-@media all and (max-width: 390px){
+
+
+@media all and (max-width: 1030px){
+    header{
+        height: 70px;
+    }
+    header nav{
+
+        gap: 250px;
+    
+    }
+    .logo{
+        height: 120px;
+        width: 150px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+       
+    }
+
+    .logo img{
+    width: 80%;
+
+    }
+
+    .alterBody .logo{
+
+        width: 120px;
+
+    }
+    .alterHeader{
+        height: 60px;
+    }
+    .alterHeader nav ul li a{
+        font-size: .8rem;
+    }
+
+
+    .section-banner div h1{
+        font-size: 5rem;
+    }
+
+    .section-introduction h3, 
+h3{
+    font-size: 2.5rem;
+}
+
+.miniBox {
+    height: 300px;
+}
+.boleira{
+height: 446px;
+width: 301px;
+/* display: flex; */
+justify-content: center;
+position: absolute;
+top: 132px;
+
+}
+}
+
+
+@media all and (max-width: 780px){
+
+    header nav{
+
+        gap: 220px;
+}
+    header nav ul{
+        gap: 25px;
+        padding: 10px 0 ;
+}
+.gray{
+    display: flex;
+    margin-inline: auto;
+}
+
+    header nav ul li a{
+        font-size: .8rem;
+}
+.section-introduction h3, 
+h3{
+    margin: 80px 0;
+    font-size: 2.5rem;
+}
+    .bigBox{
+        grid-template-columns: 1fr 1fr;
+  
+}
+    .miniBox {
+        height: 380px;
+
+}
+.boleira{
+    display: none;
+}
+.big-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+}
+.section-diferences{
+ 
+    background-color: #000000;
+}
+.box-diferences{
+    height: max-content !important;
+}
+.box-diferences ul{
+    height: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-question .contentizao .img-question {
+    height: 236px;
+    width: 35%;
+}
+
+footer{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    gap: 50px;
+}
+.start {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.start div{
+    gap: 0;
+    flex-direction: column;
+}
+.start div ul{
+    align-items: center;
+    padding: 10px;
+}
+.start div hr{
+    height: 3px;
+    width: 90%;
+}
+
+.start div ul h4{
+    margin-top: 15px;
+}
+.finish{
+    height: 50px;
+}
+}
+
+
+
+
+
+
+
+@media all and (max-width: 430px){
+    
+/*    
+        animation: openMenu .5s;
+        gap: 5%;
+    
+ 
+    @keyframes openMenu {
+      0%{
+        width: 3%;
+        left: 50%;
+        opacity: 0;
+      }
+    
+      
+    } */
+ 
 
 }

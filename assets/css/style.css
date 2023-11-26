@@ -25,84 +25,78 @@
 
 body{
     background-color: #f0ffff;
-    position: relative;
+
   
 }
-
-
-
-
-header, .other-header {
+header{
+    height:100px;
+    width: 100%;
     display: flex;
-    position: fixed;
-    justify-content: center;
     align-items: center;
-
-    
+    position: fixed;
+   justify-content: space-between;
+    transition: .3s;
     --size: 10px;
     --p: 15px;
-    --R: 25.3px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/;
+    --R: 25.3px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p));*/
     
-    height:90px;
-    width: 100%;
-    
-  
-     -webkit-mask:
+    -webkit-mask:
   
     radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))),#f7535b 99%,#0000 30%) calc(35% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
     radial-gradient(var(--R) at 50% calc(100% + var(--p)),#0000 99%,#ff73ec 101%) 50% calc(100% - var(--size))/calc(4*var(--size)) 100% repeat-x;
     background:linear-gradient(90deg,#f8a9f2,rgb(157, 255, 255));  
-    z-index: 998;
-   
-    
+}
+
+header div img{
+    width: 200px;
+    margin-left: 50px;
+    transition: .3s;
 }
 
 header nav{
     width: max-content;
+    margin-right: 50px;
     display: flex;
-    gap:500px;
-    align-items: center;
-    
-} 
+    gap: 500px;
+    margin-inline: auto;
 
+}
 header nav ul{
     display: flex;
+    gap: 50px;
     align-items: center;
-    gap: 30px;
     transition: .3s;
+    
+   
+
 }
+header svg{
+    fill: var(--secundary-bck-color);
+    width: 50px;
+    height: 50px;
+    display: none;
+  
+  }
 
 header nav ul li{
+
     height: 24px;    
     display: flex;
-   
 }
 
 header nav ul li a{
     width: 100%;
     height: 100%;
-    text-align: center;
-    font-size: 1rem;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-family: var(--font2-font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--background-color);
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 0 5px;
 }
 
-.gray li a{
-    color: #ffffff;
-}
-
-.white li a{
-    color: #ffffff;
-}
-header svg {
-   
-    width: 50px;
-    height: 50px;
-    display: none;
-  }
+ 
 
 .logo{
     z-index: 999;
@@ -114,6 +108,7 @@ header svg {
     left: 0;
     right: 0;
     margin-inline: auto;
+    transition: .3s;
    
     
 
@@ -745,10 +740,6 @@ top: 132px;
         gap: 25px;
         padding: 10px 0 ;
 }
-.gray{
-    display: flex;
-    margin-inline: auto;
-}
 
     header nav ul li a{
         font-size: .8rem;
@@ -786,6 +777,9 @@ h3{
     height: 100%;
     flex-direction: column;
     gap: 10px;
+}
+.box-question{
+    width: 50%;
 }
 
 .section-question .contentizao .img-question {
@@ -838,21 +832,162 @@ footer{
 
 
 @media all and (max-width: 430px){
-    
-/*    
-        animation: openMenu .5s;
-        gap: 5%;
-    
+
+    header{
+        height: 70px !important;
+        background-color:#f5bf5b;    
+        display: flex;
+        justify-content: end;
+        
+        
+    }
+    header nav{
+        margin-inline: 30px;
+    }
+
  
-    @keyframes openMenu {
-      0%{
-        width: 3%;
-        left: 50%;
-        opacity: 0;
+   
+    header ul{
+        display: none !important;
+    }
+
+    header svg{
+        display: flex !important;
+        height: 35px;
+        width: 35px;
+       
+    }
+
+
+
+
+ header nav ul li{
+        background: none;
+        height: 30px !important;
+        border-radius: 5px;   
+       
       }
-    
-      
-    } */
  
 
-}
+      header nav ul li a{
+        width: 250px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        color: #b72e2e !important;
+    }
+
+        header ul li a p{
+        color: #fff;
+    }
+
+        header ul li a hr{
+            height: 1px;
+            width: 100%;
+            background: #ccf8f8;
+        }
+
+    .logo{
+        
+        width: 90px;
+        margin: 0;
+
+        
+        
+    }
+
+    .display{
+       
+        position: absolute;
+        background: #151515d5 !important;
+        top: 70px;
+        left: 0;
+        width: 100% !important;
+        height: 100vh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 8%; 
+        animation: openMenu .5s;
+        gap: 5%;
+       
+    }
+    .aa{
+        margin-top: 45%;
+        background: none !important ;
+    }
+
+
+    @keyframes openMenu {
+        0%{
+          width: 3%;
+          left: 50%;
+          opacity: 0;
+        }
+    }
+
+
+    .alterHeader nav ul li a{
+        background: none;
+    
+    }
+    .alterHeader nav ul li a hr{
+        background-color: #d1ffff;
+    }
+
+    .alterHeader nav ul li a p{
+        color: #efb810;
+    }
+    .alterBody .logo{
+        width: 90px;
+    }
+
+
+    .section-banner div h1 {
+        font-size: 4rem;
+    }
+
+
+
+
+    .bigBox{
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+    .big-content div{
+        width: 100%;
+        
+    }
+    
+    .section-introduction h3,
+    h3{
+        margin-top: 30px;
+        margin-bottom: 50px;
+        white-space: nowrap;
+        font-size: 2rem;
+    }
+
+
+    .big-content .history p{
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.1rem;
+    }
+    .box-question{
+        width: 100%;
+    }
+    .img-question{
+        display: none;
+    }
+
+    
+ 
+   
+      
+    } 
+ 
+

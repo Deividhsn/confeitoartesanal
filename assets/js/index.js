@@ -10,8 +10,7 @@ window.addEventListener("scroll", function () {
 
 
 $(".openMenu").click(function(){  
-  $("header nav").toggleClass("display");
-  // alert("teste"); 
+  $("header ul").toggleClass("display"); 
 })
 
 

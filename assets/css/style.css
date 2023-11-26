@@ -34,17 +34,10 @@ header{
     display: flex;
     align-items: center;
     position: fixed;
-   justify-content: space-between;
+    justify-content: space-between;
     transition: .3s;
-    --size: 10px;
-    --p: 15px;
-    --R: 25.3px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p));*/
-    
-    -webkit-mask:
-  
-    radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))),#f7535b 99%,#0000 30%) calc(35% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
-    radial-gradient(var(--R) at 50% calc(100% + var(--p)),#0000 99%,#ff73ec 101%) 50% calc(100% - var(--size))/calc(4*var(--size)) 100% repeat-x;
-    background:linear-gradient(90deg,#f8a9f2,rgb(157, 255, 255));  
+    background:linear-gradient(90deg,#f8a9f2,rgb(157, 255, 255)) ; 
+    box-shadow: 0px 5px 10px 1px #0000005b !important; 
 }
 
 header div img{
@@ -91,11 +84,17 @@ header nav ul li a{
     justify-content: center;
     align-items: center;
     color: var(--background-color);
-    font-weight: 600;
+ 
     white-space: nowrap;
     padding: 0 5px;
+    
 }
-
+header nav ul li a p{
+    font-size: 1.7rem;
+    font-family: var(--font2-font-family);
+    color: #ffffff;   
+    font-weight: 300;
+}
  
 
 .logo{
@@ -124,7 +123,7 @@ header nav ul li a{
     
 }
 
-header nav ul li a:hover{
+header nav ul li a p:hover{
     color: var(--color1-color);
 }
 .alterBody .logo {
@@ -148,6 +147,7 @@ header nav ul li a:hover{
     background-image: url("..//img/bolo_da_vovo.gif");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     box-shadow: 0px 2px 10px 3px #000000 !important;
     
 }
@@ -734,16 +734,17 @@ top: 132px;
 
     header nav{
 
-        gap: 220px;
+        gap: 180px;
 }
     header nav ul{
-        gap: 25px;
+        gap: 10px;
         padding: 10px 0 ;
 }
 
-    header nav ul li a{
-        font-size: .8rem;
+    header nav ul li a p{
+        font-size: 1.2rem;
 }
+
 .section-introduction h3, 
 h3{
     margin: 80px 0;
@@ -834,8 +835,7 @@ footer{
 @media all and (max-width: 430px){
 
     header{
-        height: 70px !important;
-        background-color:#f5bf5b;    
+        height: 70px !important;  
         display: flex;
         justify-content: end;
         
@@ -877,17 +877,17 @@ footer{
         align-items: center;
         justify-content: center;
         text-transform: uppercase;
-        color: #b72e2e !important;
+        
     }
 
         header ul li a p{
         color: #fff;
     }
 
-        header ul li a hr{
-            height: 1px;
+        header nav ul li a hr{
+            height: 3px;
             width: 100%;
-            background: #ccf8f8;
+            background: #0bffff !important;
         }
 
     .logo{
@@ -913,11 +913,12 @@ footer{
         align-items: center;
         padding-top: 8%; 
         animation: openMenu .5s;
-        gap: 5%;
+        gap: 25px;
+      
        
     }
     .aa{
-        margin-top: 45%;
+        margin-top: 170px;
         background: none !important ;
     }
 
@@ -940,7 +941,7 @@ footer{
     }
 
     .alterHeader nav ul li a p{
-        color: #efb810;
+        color: #f8a9f2;
     }
     .alterBody .logo{
         width: 90px;
@@ -948,7 +949,9 @@ footer{
 
 
     .section-banner div h1 {
-        font-size: 4rem;
+        width: 70%;
+            text-align: center;
+            font-size: 4rem;
     }
 
 
@@ -991,3 +994,15 @@ footer{
     } 
  
 
+    @media all and (max-width: 380px){
+
+        
+        .section-introduction h3,
+        h3{
+            font-size: 2rem;
+        }
+
+     .start div ul h4{
+        font-size: 1rem;
+     }
+    }

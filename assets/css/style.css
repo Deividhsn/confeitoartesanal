@@ -551,9 +551,11 @@ footer{
 .start div{
     height: 80%;
     width: 90%;
-    background-color: #f6d7d7;
+    background-color: #ffff;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 1px #ffc9fa;
+    box-shadow: 0px 0px 10px 5px #ffc9fa;
+    box-shadow: inset 0px 0px 10px 5px #ffc9fa;
+
     display: flex;
     justify-content: center;
     align-items:center;

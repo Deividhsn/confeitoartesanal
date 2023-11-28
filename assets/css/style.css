@@ -40,11 +40,6 @@ header{
     box-shadow: 0px 5px 10px 1px #fc6a6a61 !important; 
 }
 
-header div img{
-    width: 150px;
-    margin-left: 50px;
-    transition: .3s;
-}
 
 header nav{
     width: max-content;
@@ -397,7 +392,7 @@ h3{
     width:300px;
     height: 60%;
     border-radius: 10px;    
-    background-color: #ccf8f8;
+    background-color: #accff470;
     display: flex;
     gap: 10px;
     margin-inline: auto;
@@ -411,10 +406,11 @@ h3{
     display: flex;
     flex-direction: column;
     gap: 2px;
-    background-color: #fff6fcaf;
+    background-color: #fff;
     border-radius: 10px;
     margin: 3%;
     padding: 3%;
+    box-shadow:inset 0px 0px 10px 5px #fc6a6aa2;
 
 }
 
@@ -485,7 +481,7 @@ h3{
 }
 .section-question .contentizao .img-question img{
 
-width: 100%;
+width: 80%;
 }
 
 
@@ -501,14 +497,14 @@ width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border: solid 1px #ffc9fa !important;
+    border: solid 1px #ffc9c9 !important;
     padding: 10px !important;
     
 }
 
 .ui-accordion-header-active{
-    background-color: #d1ffff !important;
-    border: #ffc9fa solid 3px !important;
+    background-color: #d1d6ff !important;
+    border: #ffc9c9 solid 3px !important;
     border-radius: 10px !important;
     color: #000000 !important;
     font-size: 1.5rem !important;
@@ -516,7 +512,7 @@ width: 100%;
 }
 
 .ui-accordion-header-collapsed{
-    background-color: #fce7f6 !important;
+    background-color: #f6d7d7 !important;
     border: #ccf8f8 solid 3px !important;
     border-radius: 10px !important;
     font-size: 1.3rem !important;
@@ -524,7 +520,7 @@ width: 100%;
 
 .ui-accordion-content{
    background-color: #ffffff !important;
-    border: #ffc9fa solid 2px !important;
+    border: #ffc9c9 solid 2px !important;
     border-radius: 10px !important;
 }
 
@@ -537,7 +533,7 @@ width: 100%;
 footer{
     height: 300px;
     width: 100%;
-    background-color: #ccf8f8;
+    background-color: #d1d6ff;
     
 }
 
@@ -555,7 +551,7 @@ footer{
 .start div{
     height: 80%;
     width: 90%;
-    background-color: #ffe9fd;
+    background-color: #f6d7d7;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 1px #ffc9fa;
     display: flex;
@@ -570,7 +566,7 @@ footer{
 .start div hr{
     height: 80%;
     width: 3px;
-    background-color: #ccf8f8;
+    background-color: #d1d6ff;
 }
 .start div ul{
     display: flex;
@@ -603,12 +599,13 @@ footer{
     letter-spacing: .1rem;
     font-family: var(--font3-font-family);
     color: #000000;
+    font-size: 1.1rem;
     
 
 }
 
 .start div ul li a:hover{
-    background-color: #ccf8f8;
+   color: #001be6;
 }
 
 
